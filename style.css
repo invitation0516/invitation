@@ -34,6 +34,7 @@ html, body {
 	-ms-text-size-adjust: 100%;
 }
 body {
+	touch-action: auto;
 	background-color: #e2e2e2;
 	word-break: keep-all;
 	text-align: center;
@@ -127,6 +128,9 @@ a:hover {
 .greeting {}
 .greeting_txt {margin-top:140px;}
 .greeting_name {border-top: 1px solid #d0d0d0;border-bottom: 1px solid #d0d0d0;display: inline-block;line-height: 1;margin:15% 0;padding:20px 0;}
+
+.gallery {}
+.slick-prev {}
 
 .card_tit {display:block;margin-bottom: 12px;color: #999;font-size:15px;font-weight:bold;}
 .card_tit_txt {display:block;font-size: 17px;padding-left: 2px;margin-bottom: 15%;letter-spacing: 2px;line-height: 1.6;}

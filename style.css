@@ -34,7 +34,6 @@ html, body {
 	-ms-text-size-adjust: 100%;
 }
 body {
-	touch-action: auto;
 	background-color: #e2e2e2;
 	word-break: keep-all;
 	text-align: center;

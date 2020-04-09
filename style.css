@@ -38,7 +38,8 @@ body {
 	word-break: keep-all;
 	text-align: center;
 	transition: background-color .5s ease-out;
-	touch-action: none;
+	-webkit-text-size-adjust:none;
+	-webkit-overflow-scrolling:touch;
 }
 body[card-type="spread"] {
 	touch-action: auto;

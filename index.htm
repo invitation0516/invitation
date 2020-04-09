@@ -2,29 +2,59 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>결혼합니다</title>
+<!--<meta property="og:image" content="이미지URL">-->
+<meta property="og:title" content="신정완♥조한솔">
+<meta property="og:description" content="우리 결혼합니다">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="./slick.css">
 <link rel="stylesheet" type="text/css" href="./style.css">
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./jquery.min.js"></script>
 <script type="text/javascript" src="slick.min.js"></script>
-
 <script type="text/javascript">
+		
+	$(window).load(function(){
+		$('.loader').delay(3000).fadeOut();
+	});
+	
     $(document).ready(function(){
+		
       $('.swiper-wrapper').slick({
         dots: true,
         infinite: true
       });
+	  
     });
+
+//디데이 종료 일자 설정
+var countDownDate = new Date('May 16, 2020').getTime();
+
+//1초마다 갱신되도록 함수 생성,실행
+var x = setInterval(function() {
+	// 오늘 날짜 등록
+	var now = new Date().getTime();
+	
+	// 종료일자에서 현재일자를 뺀 시간
+	var distance = countDownDate - now;
+	
+	// 각 변수에 일, 시, 분, 초를 등록
+	var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+	
+	//id가 d-day인 HTML코드에 내용 삽입
+	document.getElementById('d_date').innerHTML = d + 1;
+});
+
+
 </script>
     
 </head>
 
 <body>
-<div class="envelope" style="display: none;">
-	<div class="phrase" style="display: block;">
+
+<div class="loader">
+	<div class="message">
 		<span>마음을 담아<br>소중한 당신께<br>드립니다</span>
+        <div class="loading_area"><span class="loading"></span></div>
 	</div>
 </div>
 
@@ -33,7 +63,7 @@
     <li class="card main">
     	<div class="main_cont">					
             <div class="main_img">
-                <div class="d-day">D · 38</div>
+                <div class="d-day">D · <span id="d_date"></span></div>
             </div>
             <div class="main_txt" style="margin-top:65px;">
 				<div class="name">신재완 · 조한솔 </div>
@@ -59,12 +89,11 @@
     </li>
     <li class="card gallery">
         <div class="swiper-container">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper"> <!-- 슬라이더 입니다. -->
-                <div class="swiper-slide"><img src="slide5.jpg" /></div>
-                <div class="swiper-slide"><img src="slide1.jpg" /></div>
-                <div class="swiper-slide"><img src="slide2.jpg" /></div>
-                <div class="swiper-slide"><img src="slide3.jpg" /></div>
+                <div class="swiper-slide" style="padding-top:106px"><img src="slide5.jpg" /></div>
+                <div class="swiper-slide" style="padding-top:150px"><img src="slide1.jpg" /></div>
+                <div class="swiper-slide" style="padding-top:144px"><img src="slide2.jpg" /></div>
+                <div class="swiper-slide" style="padding-top:150px"><img src="slide3.jpg" /></div>
                 <div class="swiper-slide"><img src="slide4.jpg" /></div>
             </div>
     	</div>

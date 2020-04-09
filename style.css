@@ -1,5 +1,26 @@
-/*--- Reset ---*/
-/*@import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);*/
+@charset "utf-8";
+
+/*font*/
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 300;
+  src: url(KoPubWorldBatang_Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 400;
+  src: url(KoPubWorldBatang_Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'KoPub Batang';
+  font-style: normal;
+  font-weight: 700;
+  src: url(KoPubWorldBatang_Bold.ttf) format('truetype');
+}
 
 html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time { margin: 0; padding: 0; }
 html, body {
@@ -99,6 +120,7 @@ a:hover {
 .card_wrap .card {position:relative;height:580px;margin-top:12px;background:url('bg_paper.jpg');background-size: 345px auto;border-radius: 2px;box-shadow: 0 0 1px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.12), inset 0 1px 2px rgba(255,255,255,.75);overflow: hidden;}
 
 .main_cont .main_img {background:url('main_img.jpg');height:auto;height:55vh;max-height:345px;background-size: cover;background-position: center center;position: relative;opacity: .9;mix-blend-mode: multiply;width: 100%;}
+.main_cont .main_img .d-day {top: auto;right: 22px;bottom: -60px;position: absolute;width: 88px;height: 88px;border: 1px solid rgba(0,0,0,.15);border-radius: 43px;background-size: 86px 86px;background-position-y: 1px;background-image: url('day_stamp.png');line-height: 90px;font-size: 15px;letter-spacing: 0;color: #aaa;transform: rotate(-8deg) scale(1.12);}
 .main_txt .name {font-size:18px;letter-spacing: 3px;}
 .main_txt .wedding_date {font-size: 13px;letter-spacing: 0.5px;}
 
@@ -122,7 +144,7 @@ a:hover {
 .info_detail {padding:10%;padding-bottom:40px;background:url('bg_paper.jpg') 1px;background-size: 345px auto;border-radius: 2px;box-shadow: 0 0 1px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.12), inset 0 1px 2px rgba(255,255,255,.75);overflow: hidden;}
 
 .info_detail ul li {font-size: 13px;letter-spacing: 0;padding: 0 0 10px;text-align: left;}
-.info_detail h3 {color: #999;display: block;font-family: 'Noto Sans KR',sans-serif;font-size: 11px;margin-bottom: 7px;}
+.info_detail h3 {color: #999;display: block;font-size: 13px;margin-bottom: 7px;}
 
 
 .swiper-container { width:345px; height:auto; }

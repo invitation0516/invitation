@@ -29,7 +29,7 @@ html, body {
 	font-size: 15px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	line-height: 1.75;
+	line-height: 2;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -122,12 +122,14 @@ a:hover {
 
 .main_cont .main_img {background:url('main_img.jpg');height:auto;height:55vh;max-height:345px;background-size: cover;background-position: center center;position: relative;opacity: .9;mix-blend-mode: multiply;width: 100%;}
 .main_cont .main_img .d-day {top: auto;right: 22px;bottom: -60px;position: absolute;width: 88px;height: 88px;border: 1px solid rgba(0,0,0,.15);border-radius: 43px;background-size: 86px 86px;background-position-y: 1px;background-image: url('day_stamp.png');line-height: 90px;font-size: 15px;letter-spacing: 0;color: #aaa;transform: rotate(-8deg) scale(1.12);}
-.main_txt .name {font-size:18px;letter-spacing: 3px;}
+.main_txt .name {font-size:18px;letter-spacing:4px;}
 .main_txt .wedding_date {font-size: 13px;letter-spacing: 0.5px;}
 
 .greeting {}
-.greeting_txt {margin-top:140px;}
-.greeting_name {border-top: 1px solid #d0d0d0;border-bottom: 1px solid #d0d0d0;display: inline-block;line-height: 1;margin:15% 0;padding:20px 0;}
+.greeting_txt {margin-top:140px;letter-spacing:2px}
+.greeting_name {border-top: 1px solid #d0d0d0;border-bottom: 1px solid #d0d0d0;display: inline-block;line-height: 1;margin:15% 0;padding:20px 0;letter-spacing:2px}
+.greeting_name .c_gray {font-size:13px;color:#999;}
+.greeting_name .call {background:url('icon_call.png') no-repeat 100% 50%;display:inline-block;padding:5px 25px 4px 0;}
 
 .gallery {}
 

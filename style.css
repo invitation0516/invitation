@@ -1,7 +1,6 @@
 @charset "utf-8";
-
 @import url(//fonts.googleapis.com/earlyaccess/kopubbatang.css);
-/*
+
 /*font*/
 @font-face {
   font-family: 'KoPub Batang';
@@ -22,7 +21,7 @@
   font-style: normal;
   font-weight: 700;
   src: url(KoPubWorldBatang_Bold.ttf) format('truetype');
-}*/
+}
 
 html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time { margin: 0; padding: 0; }
 html, body {
